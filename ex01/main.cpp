@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:16 by estegana          #+#    #+#             */
-/*   Updated: 2024/11/30 12:34:17 by estegana         ###   ########.fr       */
+/*   Updated: 2024/11/30 13:17:06 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 		if (parsing(input))
 			std::cout << "parsing stdin ok: " << input << std::endl;
 		else
-			std::cout << "parsing mauvais" << std::endl;
+			std::cout << "enter valid command ; ADD, SEARCH or EXIT" << std::endl;
 	}
 	return 0;
 }
