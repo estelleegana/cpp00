@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:23 by estegana          #+#    #+#             */
-/*   Updated: 2024/11/30 12:34:40 by estegana         ###   ########.fr       */
+/*   Updated: 2024/11/30 13:22:50 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define SAMPLECLASS_H
 
 # include <iostream>
-
-int parsing(std::string input);
 
 class PhoneBook {
 

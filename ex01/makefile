@@ -13,7 +13,6 @@ RM = rm -rf
 #fichier(s) source(s)
 SRCS = Contact.cpp \
 	main.cpp \
-	parsing.cpp \
 	PhoneBook.cpp \
 
 #creation de fichier(s) objet(s) a partir de fichier(s) source(s)
