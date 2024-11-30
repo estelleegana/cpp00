@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/30 12:34:16 by estegana          #+#    #+#             */
-/*   Updated: 2024/11/30 12:34:17 by estegana         ###   ########.fr       */
+/*   Created: 2024/11/30 12:34:23 by estegana          #+#    #+#             */
+/*   Updated: 2024/11/30 12:34:40 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.hpp"
-#include "Contact.hpp"
+#ifndef SAMPLECLASS_H
+# define SAMPLECLASS_H
 
-int main()
-{
-	std::string input;
-	while (true)
-	{
-		std::cin >> input;
-		if (parsing(input))
-			std::cout << "parsing stdin ok: " << input << std::endl;
-		else
-			std::cout << "parsing mauvais" << std::endl;
-	}
-	return 0;
-}
+# include <iostream>
 
+int parsing(std::string input);
+
+class PhoneBook {
+
+public:
+
+	PhoneBook(void);//constructeur
+	~PhoneBook(void);//destructeur
+};
+
+#endif

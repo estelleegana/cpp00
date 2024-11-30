@@ -1,5 +1,5 @@
 #nom du programme
-NAME = sampleclass
+NAME = PhoneBook
 
 #compilateur
 CC = c++
@@ -11,8 +11,10 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -rf
 
 #fichier(s) source(s)
-SRCS = main.cpp \
-	sampleclass.cpp \
+SRCS = Contact.cpp \
+	main.cpp \
+	parsing.cpp \
+	PhoneBook.cpp \
 
 #creation de fichier(s) objet(s) a partir de fichier(s) source(s)
 OBJS = $(SRCS:.cpp=.o)
