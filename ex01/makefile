@@ -1,5 +1,5 @@
 #nom du programme
-NAME = PhoneBook
+NAME = MyPhoneBook
 
 #compilateur
 CC = c++

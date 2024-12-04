@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:16 by estegana          #+#    #+#             */
-/*   Updated: 2024/11/30 13:22:29 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/04 20:40:40 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,22 @@
 
 int main()
 {
+	PhoneBook phonebook;
 	std::string input;
+
 	while (true)
 	{
+		std::cout << std::endl;
+		std::cout << "enter command ; ADD, SEARCH or EXIT" << std::endl;
 		std::cin >> input;
-		if (input == "ADD" || input == "SEARCH" || input == "EXIT")
-		{
-			if (input == "EXIT")
-				exit(0);
-			printf("launch");
-		}
+		if (input == "EXIT" || std::cin.eof())
+			exit(0);
+		else if (input == "ADD")
+			phonebook.add();
+		else if (input == "SEARCH")
+			phonebook.search();
 		else
-			std::cout << "enter valid command ; ADD, SEARCH or EXIT" << std::endl;
+			std::cout << "invalid command: " << input << std::endl;
 	}
 	return 0;
 }
