@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:19 by estegana          #+#    #+#             */
-/*   Updated: 2024/12/04 19:21:03 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/06 14:56:29 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,7 @@ public:
 	std::string getdarkestsecret() const;
 
 //setters
-	void setfirstname(const std::string& firstname);
-	void setlastname(const std::string& lastname);
-	void setnickname(const std::string& nickname);
-	void setnumber(const std::string& number);
-	void setdarkestsecret(const std::string& darkestsecret);
+	//pas d'utilite puisque pas besoin de recup les attributs pour les modifier
 };
 
 #endif

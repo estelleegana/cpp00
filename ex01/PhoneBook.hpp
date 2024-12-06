@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:23 by estegana          #+#    #+#             */
-/*   Updated: 2024/12/04 19:19:11 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/06 14:39:48 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 class PhoneBook {
 private:
 	Contact _contact[8];
-	int _contactcount;
-	int _i;
+	int _nbcontact;
+	void displaycontact(void) const;
 
 public:
 	PhoneBook(void);//constructeur

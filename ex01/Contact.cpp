@@ -2,11 +2,13 @@
 #include "Contact.hpp"
 
 Contact::Contact() {
-	std::cout << "Contact Constructeur called" << std::endl;
+	std::cout << "Constructeur called - Contact" << std::endl;
 	return;
 }
 
 Contact::~Contact(){
-	std::cout << "Contact Destructeur called" << std::endl;
+	std::cout << "Destructeur called - Contact" << std::endl;
 	return;
 }
+
+//void Contact::createcontact(std::string )
