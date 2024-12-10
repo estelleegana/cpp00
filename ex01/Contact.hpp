@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:19 by estegana          #+#    #+#             */
-/*   Updated: 2024/12/10 17:49:55 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/10 18:30:22 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,9 @@ public:
 	Contact();//constructeur
 	~Contact();//destructeur
 
-//getters
-	std::string getfirstname();
-	std::string getlastname();
-	std::string getnickname();
-	std::string getnumber();
-	std::string getdarkestsecret();
 	void enregistrercontact(int i);
 	void listecomplete();
 	void displaycontact();
-
-//setters
-	//pas d'utilite puisque pas besoin de recup les attributs pour les modifier
 };
 
 #endif
