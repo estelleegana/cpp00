@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:19 by estegana          #+#    #+#             */
-/*   Updated: 2024/12/06 14:56:29 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/10 17:49:55 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 class Contact {
 private:
+	int _i;
 	std::string _firstname;
 	std::string _lastname;
 	std::string _nickname;
@@ -29,11 +30,14 @@ public:
 	~Contact();//destructeur
 
 //getters
-	std::string getfirstname() const;
-	std::string getlastname() const;
-	std::string getnickname() const;
-	std::string getnumber() const;
-	std::string getdarkestsecret() const;
+	std::string getfirstname();
+	std::string getlastname();
+	std::string getnickname();
+	std::string getnumber();
+	std::string getdarkestsecret();
+	void enregistrercontact(int i);
+	void listecomplete();
+	void displaycontact();
 
 //setters
 	//pas d'utilite puisque pas besoin de recup les attributs pour les modifier

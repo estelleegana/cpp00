@@ -1,10 +1,9 @@
 #include <iostream>
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook()
+PhoneBook::PhoneBook() : _nbcontact(0)
 {
 	std::cout << "Constructeur called - PhoneBook" << std::endl;
-
 	return;
 }
 
@@ -13,29 +12,28 @@ PhoneBook::~PhoneBook()
 	std::cout << "Destructeur called - PhoneBook" << std::endl;
 	return;
 }
-//les constructeurs et destructeurs n'ont pas de type de retour
 
 void PhoneBook::add()
 {
-	std::string str;
-
-	printf("entree dans add\n");
-	while (true)
-	{
-		getline(std::cin, str);
-		std::cout << "str : " << str << std::endl;
-	}
-	//phonebook::contact[] = enregistrercontact()
-	//enregistrercontact() > verifie que attributs sont bons
-	//+ incrementer nb de contacts
+	//std::cout << "------- entree dans add ----------" << std::endl;
+	//std::cout << "nb de contacts : " << _nbcontact << std::endl;
+	_contact[_nbcontact].enregistrercontact(_nbcontact);
+	_nbcontact++;
 }
 
 void PhoneBook::search()
 {
-	printf("entree dans search\n");
-}
+	std::string input;
 
-void PhoneBook::displaycontact() const
-{
-	printf("entree dans displaycontact\n");
+	if (_nbcontact > 0)
+	{
+		std::cout << "enter contact id u wanna display :" << std::endl;
+		for (int i = 0; i < _nbcontact; i++)
+			_contact[i].listecomplete();
+		getline(std::cin, input);
+		//std::cout << "index du contact demande : " << input << std::endl;
+		_contact[atoi(input.c_str()) - 1].displaycontact();
+	}
+	else
+		std::cout << "empty phonebook" << std::endl;
 }
