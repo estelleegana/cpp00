@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:23 by estegana          #+#    #+#             */
-/*   Updated: 2024/12/10 17:17:59 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/13 19:57:09 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ class PhoneBook {
 private:
 	Contact _contact[8];
 	int _nbcontact;
-	void _displaycontact(int i);
-
+	int _oldest;
 
 public:
 	PhoneBook();//constructeur
@@ -29,7 +28,7 @@ public:
 
 	void add();
 	void search();
-
+	void displayheader();
 };
 
 #endif
