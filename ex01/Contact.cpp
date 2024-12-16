@@ -18,7 +18,9 @@ void Contact::enregistrercontact(int i)
 	std::string input;
 
 	//std::cout << "------- entree dans _enregistrercontact -------" << std::endl;
-	_i = i+1;
+	//std::cout << "_i ; " << i << ", modulo i + 1 : ";
+	_i = i % 8 +1;
+	//std::cout << _i << std::endl;
 	std::cout << "type _firstname: ";
 	getline(std::cin, input);
 	_firstname = input;

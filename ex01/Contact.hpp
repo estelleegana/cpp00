@@ -6,7 +6,7 @@
 /*   By: estegana <estegana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:34:19 by estegana          #+#    #+#             */
-/*   Updated: 2024/12/13 18:39:53 by estegana         ###   ########.fr       */
+/*   Updated: 2024/12/16 17:49:14 by estegana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 class Contact {
 private:
 	int _i;
-	int _oldest;
 	std::string _firstname;
 	std::string _lastname;
 	std::string _nickname;

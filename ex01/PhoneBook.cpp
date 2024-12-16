@@ -23,18 +23,22 @@ void PhoneBook::add()
 	{
 		_contact[_nbcontact].enregistrercontact(_nbcontact);
 		_nbcontact++;
+		_oldest++;
 	}
 	else
 	{
 		std::cout << "confirm replacing oldest contact [yes/no]? ";
 		getline(std::cin, input);
 		if (input == "yes")
-			_contact[_ol].enregistrercontact(_nbcontact);
+		{
+			//std::cout << "_oldest : " << _oldest << std::endl;
+			_contact[_oldest % 8].enregistrercontact(_oldest);
+			_oldest++;
+		}
 		else
 			return;
 	}
 }
-
 
 //liste de 4 colonnes : index, first name, last name et nickname.
 //Chaque colonne 10 caractères de long. séparées par un pipe |
