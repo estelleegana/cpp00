@@ -23,11 +23,13 @@ int main(int argc, char **argv)
 		for (int i = 1; i < argc; i++)//pr i partant de 1 (argv[1]), tjs ds le nb d'argc, incrementant
 		{
 			char* argument = argv[i];//declaration de la variable a traiter (puis printf toupper)
-			for (int j = 0; argument[j] != '\0'; j++)//pr j partant de 0 (argv[i][0]), argv[i][j] != '\0', incremantant
-				argument[j] = std::toupper(argument[j]);//variable = toupper(varible)
+			for (int j = 0; argument[j]; j++)//pr j partant de 0 (argv[i][0]), argv[i][j] != '\0', incremantant
+				argument[j] = std::toupper(argument[j]);//variable = toupper(variable)
 			std::cout << argument;//printf(%s, argument)
 		}
 		std::cout << std::endl;
 	}
 	return 0;
 }
+
+
