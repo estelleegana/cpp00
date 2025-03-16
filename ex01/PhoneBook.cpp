@@ -1,7 +1,7 @@
 #include <iostream>
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook() : _nbcontact(0)
+PhoneBook::PhoneBook() : _nbcontact(0), _oldest(0)
 {
 	std::cout << "Constructeur called - PhoneBook" << std::endl;
 	return;
